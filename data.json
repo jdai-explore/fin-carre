@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "name": "Acquisition process group (ACQ)",
+      "processes": ["ACQ.4 Supplier Monitoring"]
+    },
+    {
+      "name": "System engineering process group (SYS)",
+      "processes": [
+        "SYS.1 Requirements Elicitation",
+        "SYS.2 System Requirements Analysis",
+        "SYS.3 System Architectural Design",
+        "SYS.4 System Integration and Integration Verification",
+        "SYS.5 System Verification"
+      ]
+    }
+  ],
+  "specificQuestions": {
+    "ACQ.4 Supplier Monitoring": [
+      "ACQ.4.BP1: Agree on and maintain joint activities, joint interfaces, and information to be exchanged.",
+      "ACQ.4.BP2: Exchange all agreed information.",
+      "ACQ.4.BP3: Review development work products with the supplier. Review development work products with the supplier on the agreed regular basis, covering technical aspects, problems and risks. Track open measures.",
+      "ACQ.4.BP4: Review progress of the supplier.",
+      "ACQ.4.BP5: Act to correct deviations."
+    ]
+  },
+  "commonQuestions": [
+    "GP 2.1.1: Identify the objectives and define a strategy for the performance of the process.",
+    "GP 2.1.2: Plan the performance of the process.",
+    "GP 2.1.3: Determine resource needs.",
+    "GP 2.1.4: Identify and make available resources.",
+    "GP 2.1.5: Monitor and adjust the performance of the process.",
+    "GP 2.1.6: Manage the interfaces between involved parties.",
+    "GP 2.2.1: Define the requirements for the work products.",
+    "GP 2.2.2: Define the requirements for storage and control of the work products.",
+    "GP 2.2.3: Identify, store and control the work products.",
+    "GP 2.2.4: Review and adjust work products."
+  ]
+}
