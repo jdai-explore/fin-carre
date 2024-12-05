@@ -13,6 +13,65 @@
         "SYS.4 System Integration and Integration Verification",
         "SYS.5 System Verification"
       ]
+    },
+    {
+      "name": "Software engineering process group (SWE)",
+      "processes": [
+        "SWE.1 Software Requirements Analysis",
+        "SWE.2 Software Architectural Design",
+        "SWE.3 Software Detailed Design and Unit Construction",
+        "SWE.4 Software Unit Verification",
+        "SWE.5 Software Component Verification and Integration Verification",
+        "SWE.6 Software Verification"
+      ]
+    },
+    {
+      "name": "Validation process group (VAL)",
+      "processes": ["VAL.1 Validation"]
+    },
+    {
+      "name": "Machine Learning Engineering process group (MLE)",
+      "processes": [
+        "MLE.1 Machine Learning Requirements Analysis",
+        "MLE.2 Machine Learning Architecture",
+        "MLE.3 Machine Learning Training",
+        "MLE.4 Machine Learning Model Testing"
+      ]
+    },
+    {
+      "name": "Hardware Engineering process group (HWE)",
+      "processes": [
+        "HWE.1 Hardware Requirements Analysis",
+        "HWE.2 Hardware Design",
+        "HWE.3 Verification against Hardware Design",
+        "HWE.4 Verification against Hardware Requirements"
+      ]
+    },
+    {
+      "name": "Supporting process group (SUP)",
+      "processes": [
+        "SUP.1 Quality Assurance",
+        "SUP.8 Configuration Management",
+        "SUP.9 Problem Resolution Management",
+        "SUP.10 Change Request Management",
+        "SUP.11 Machine Learning Data Management"
+      ]
+    },
+    {
+      "name": "Management process group (MAN)",
+      "processes": [
+        "MAN.3 Project Management",
+        "MAN.5 Risk Management",
+        "MAN.6 Measurement"
+      ]
+    },
+    {
+      "name": "Process improvement process group (PIM)",
+      "processes": ["PIM.3 Process Improvement"]
+    },
+    {
+      "name": "Reuse process group (REU)",
+      "processes": ["REU.2 Management of Products for Reuse"]
     }
   ],
   "specificQuestions": {
@@ -22,6 +81,20 @@
       "ACQ.4.BP3: Review development work products with the supplier. Review development work products with the supplier on the agreed regular basis, covering technical aspects, problems and risks. Track open measures.",
       "ACQ.4.BP4: Review progress of the supplier.",
       "ACQ.4.BP5: Act to correct deviations."
+    ],
+  "SYS.1 Requirements Elicitation": [
+      "SYS.1.BP1: Obtain stakeholder expectations and requests.",
+      "SYS.1.BP2: Agree on requirements.",
+      "SYS.1.BP3: Analyze stakeholder requirements changes.",
+      "SYS.1.BP4: Communicate requirements status."
+    ],
+    "SYS.2 System Requirements Analysis": [
+        "SYS.2.BP1: Specify system requirements.",
+        "SYS.2.BP2: Structure system requirements.",
+        "SYS.2.BP3: Analyze system requirements.",
+        "SYS.2.BP4: Analyze the impact on the system context.",
+        "SYS.2.BP5: Ensure consistency and establish bidirectional traceability.",
+        "SYS.2.BP6: Communicate agreed system requirements and impact on the system context."
     ]
   },
   "commonQuestions": [
