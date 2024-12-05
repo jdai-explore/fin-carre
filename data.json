@@ -2,101 +2,197 @@
   "categories": [
     {
       "name": "Acquisition process group (ACQ)",
-      "processes": ["ACQ.4 Supplier Monitoring"]
+      "processes": [
+        {
+          "name": "ACQ.4 Supplier Monitoring",
+          "level1": [
+            "ACQ.4.BP1: Agree on and maintain joint activities, joint interfaces, and information to be exchanged.",
+            "ACQ.4.BP2: Exchange all agreed information.",
+            "ACQ.4.BP3: Review development work products with the supplier. Review development work products with the supplier on the agreed regular basis, covering technical aspects, problems and risks. Track open measures.",
+            "ACQ.4.BP4: Review progress of the supplier.",
+            "ACQ.4.BP5: Act to correct deviations."
+          ]
+        }
+      ]
     },
     {
       "name": "System engineering process group (SYS)",
       "processes": [
-        "SYS.1 Requirements Elicitation",
-        "SYS.2 System Requirements Analysis",
-        "SYS.3 System Architectural Design",
-        "SYS.4 System Integration and Integration Verification",
-        "SYS.5 System Verification"
+        {
+          "name": "SYS.1 Requirements Elicitation",
+          "level1": [
+            "SYS.1.BP1: Obtain stakeholder expectations and requests.",
+            "SYS.1.BP2: Agree on requirements.",
+            "SYS.1.BP3: Analyze stakeholder requirements changes.",
+            "SYS.1.BP4: Communicate requirements status."
+          ]
+        },
+        {
+          "name": "SYS.2 System Requirements Analysis",
+          "level1": [
+            "SYS.2.BP1: Specify system requirements.",
+            "SYS.2.BP2: Structure system requirements.",
+            "SYS.2.BP3: Analyze system requirements.",
+            "SYS.2.BP4: Analyze the impact on the system context.",
+            "SYS.2.BP5: Ensure consistency and establish bidirectional traceability.",
+            "SYS.2.BP6: Communicate agreed system requirements and impact on the system context."
+          ]
+        },
+        {
+          "name": "SYS.3 System Architectural Design",
+          "level1": []
+        },
+        {
+          "name": "SYS.4 System Integration and Integration Verification",
+          "level1": []
+        },
+        {
+          "name": "SYS.5 System Verification",
+          "level1": []
+        }
       ]
     },
     {
       "name": "Software engineering process group (SWE)",
       "processes": [
-        "SWE.1 Software Requirements Analysis",
-        "SWE.2 Software Architectural Design",
-        "SWE.3 Software Detailed Design and Unit Construction",
-        "SWE.4 Software Unit Verification",
-        "SWE.5 Software Component Verification and Integration Verification",
-        "SWE.6 Software Verification"
+        {
+          "name": "SWE.1 Software Requirements Analysis",
+          "level1": []
+        },
+        {
+          "name": "SWE.2 Software Architectural Design",
+          "level1": []
+        },
+        {
+          "name": "SWE.3 Software Detailed Design and Unit Construction",
+          "level1": []
+        },
+        {
+          "name": "SWE.4 Software Unit Verification",
+          "level1": []
+        },
+        {
+          "name": "SWE.5 Software Component Verification and Integration Verification",
+          "level1": []
+        },
+        {
+          "name": "SWE.6 Software Verification",
+          "level1": []
+        }
       ]
     },
     {
       "name": "Validation process group (VAL)",
-      "processes": ["VAL.1 Validation"]
+      "processes": [
+        {
+          "name": "VAL.1 Validation",
+          "level1": []
+        }
+      ]
     },
     {
       "name": "Machine Learning Engineering process group (MLE)",
       "processes": [
-        "MLE.1 Machine Learning Requirements Analysis",
-        "MLE.2 Machine Learning Architecture",
-        "MLE.3 Machine Learning Training",
-        "MLE.4 Machine Learning Model Testing"
+        {
+          "name": "MLE.1 Machine Learning Requirements Analysis",
+          "level1": []
+        },
+        {
+          "name": "MLE.2 Machine Learning Architecture",
+          "level1": []
+        },
+        {
+          "name": "MLE.3 Machine Learning Training",
+          "level1": []
+        },
+        {
+          "name": "MLE.4 Machine Learning Model Testing",
+          "level1": []
+        }
       ]
     },
     {
       "name": "Hardware Engineering process group (HWE)",
       "processes": [
-        "HWE.1 Hardware Requirements Analysis",
-        "HWE.2 Hardware Design",
-        "HWE.3 Verification against Hardware Design",
-        "HWE.4 Verification against Hardware Requirements"
+        {
+          "name": "HWE.1 Hardware Requirements Analysis",
+          "level1": []
+        },
+        {
+          "name": "HWE.2 Hardware Design",
+          "level1": []
+        },
+        {
+          "name": "HWE.3 Verification against Hardware Design",
+          "level1": []
+        },
+        {
+          "name": "HWE.4 Verification against Hardware Requirements",
+          "level1": []
+        }
       ]
     },
     {
       "name": "Supporting process group (SUP)",
       "processes": [
-        "SUP.1 Quality Assurance",
-        "SUP.8 Configuration Management",
-        "SUP.9 Problem Resolution Management",
-        "SUP.10 Change Request Management",
-        "SUP.11 Machine Learning Data Management"
+        {
+          "name": "SUP.1 Quality Assurance",
+          "level1": []
+        },
+        {
+          "name": "SUP.8 Configuration Management",
+          "level1": []
+        },
+        {
+          "name": "SUP.9 Problem Resolution Management",
+          "level1": []
+        },
+        {
+          "name": "SUP.10 Change Request Management",
+          "level1": []
+        },
+        {
+          "name": "SUP.11 Machine Learning Data Management",
+          "level1": []
+        }
       ]
     },
     {
       "name": "Management process group (MAN)",
       "processes": [
-        "MAN.3 Project Management",
-        "MAN.5 Risk Management",
-        "MAN.6 Measurement"
+        {
+          "name": "MAN.3 Project Management",
+          "level1": []
+        },
+        {
+          "name": "MAN.5 Risk Management",
+          "level1": []
+        },
+        {
+          "name": "MAN.6 Measurement",
+          "level1": []
+        }
       ]
     },
     {
       "name": "Process improvement process group (PIM)",
-      "processes": ["PIM.3 Process Improvement"]
+      "processes": [
+        {
+          "name": "PIM.3 Process Improvement",
+          "level1": []
+        }
+      ]
     },
     {
       "name": "Reuse process group (REU)",
-      "processes": ["REU.2 Management of Products for Reuse"]
+      "processes": [
+        {
+          "name": "REU.2 Management of Products for Reuse",
+          "level1": []
+        }
+      ]
     }
   ],
-  "specificQuestions": {
-    "ACQ.4 Supplier Monitoring": [
-      "ACQ.4.BP1: Agree on and maintain joint activities, joint interfaces, and information to be exchanged.",
-      "ACQ.4.BP2: Exchange all agreed information.",
-      "ACQ.4.BP3: Review development work products with the supplier. Review development work products with the supplier on the agreed regular basis, covering technical aspects, problems and risks. Track open measures.",
-      "ACQ.4.BP4: Review progress of the supplier.",
-      "ACQ.4.BP5: Act to correct deviations."
-    ],
-  "SYS.1 Requirements Elicitation": [
-      "SYS.1.BP1: Obtain stakeholder expectations and requests.",
-      "SYS.1.BP2: Agree on requirements.",
-      "SYS.1.BP3: Analyze stakeholder requirements changes.",
-      "SYS.1.BP4: Communicate requirements status."
-    ],
-    "SYS.2 System Requirements Analysis": [
-        "SYS.2.BP1: Specify system requirements.",
-        "SYS.2.BP2: Structure system requirements.",
-        "SYS.2.BP3: Analyze system requirements.",
-        "SYS.2.BP4: Analyze the impact on the system context.",
-        "SYS.2.BP5: Ensure consistency and establish bidirectional traceability.",
-        "SYS.2.BP6: Communicate agreed system requirements and impact on the system context."
-    ]
-  },
   "commonQuestions": [
     "GP 2.1.1: Identify the objectives and define a strategy for the performance of the process.",
     "GP 2.1.2: Plan the performance of the process.",

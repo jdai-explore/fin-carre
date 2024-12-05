@@ -6,13 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const sidebar = document.getElementById("sidebar");
   const assessmentInfo = document.getElementById("assessment-info");
 
+  let commonQuestions = [];
+
   fetch("data.json")
     .then((response) => response.json())
     .then((data) => {
-      const { categories, specificQuestions, commonQuestions } = data;
+      const { categories, commonQuestions: commonQs } = data;
+      commonQuestions = commonQs;
 
       populateCategories(categories, categoryList);
-      setupEventListeners(specificQuestions, commonQuestions);
+      setupEventListeners();
     })
     .catch((error) => console.error("Error fetching JSON data:", error));
 
@@ -36,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ul.classList.add("hidden");
     processes.forEach((process) => {
       const subli = document.createElement("li");
-      subli.textContent = process;
+      subli.textContent = process.name;
       subli.addEventListener("click", (e) =>
         handleProcessClick(e, subli, process)
       );
@@ -47,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleProcessClick(e, subli, process) {
     e.stopPropagation();
-    categoryTitle.textContent = process;
+    categoryTitle.textContent = process.name;
     questionsDiv.innerHTML = "";
 
     // Remove highlight from previously selected process
@@ -59,22 +62,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Highlight the selected process
     subli.classList.add("selected-process");
 
-    fetch("data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const { specificQuestions, commonQuestions } = data;
-        if (specificQuestions[process]) {
-          specificQuestions[process].forEach((question) => {
-            questionsDiv.appendChild(createQuestionElement(question));
-          });
-        }
-        commonQuestions.forEach((question, i) => {
-          questionsDiv.appendChild(
-            createQuestionElement(`${i + 1}. ${question}`)
-          );
-        });
-      })
-      .catch((error) => console.error("Error fetching JSON data:", error));
+    // Display Level 1 questions
+    if (process.level1) {
+      process.level1.forEach((question) => {
+        questionsDiv.appendChild(createQuestionElement(`Level 1: ${question}`));
+      });
+    }
+
+    // Display Level 2 questions
+    commonQuestions.forEach((question, i) => {
+      questionsDiv.appendChild(
+        createQuestionElement(`Level 2: ${i + 1}. ${question}`)
+      );
+    });
   }
 
   function setupEventListeners() {
